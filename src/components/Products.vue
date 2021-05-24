@@ -60,9 +60,6 @@ export default {
         productName: data.item.product_name,
         quantity: data.quantity,
         price: data.item.price
-        // subtotal: function(){
-        //   return quantity* price
-        // }
       }
       let dataExist = this.sharedState.cart.find(data => {
         return data.productName === product.productName

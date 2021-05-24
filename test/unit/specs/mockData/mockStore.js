@@ -1,8 +1,26 @@
 export const store = {
   debug: true,
   state: {
-    cart: [],
-    currentMember: {},
+    cart: [{
+      discountedPrice: 3600,
+      price: 3488.99,
+      pricePerUnitAfterDiscount: 2588.99,
+      productName: "Kone",
+      quantity: 4,
+      subtotal: "13955.96",
+      subtotalAfterDiscount: 10355.96
+    },{
+      discountedPrice: 105.99799999999999,
+      price: 529.99,
+      productName: "Ironhide Cartridge",
+      quantity: 1,
+      subtotal: "529.99",
+      subtotalAfterDiscount: 423.992
+    }],
+    currentMember: {
+      name: 'Mary', 
+      membershipLevel: 'Diamond',
+    },
     members: [
       { name: 'John', membership_level: 'Associate' },
       { name: 'Mary', membership_level: 'Diamond' }

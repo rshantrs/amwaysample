@@ -7,11 +7,7 @@
 <script>
 
 export default {
-  name: 'App',
-   data: function() {
-     return {
-    };
-  }
+  name: 'App'
 }
 </script>
 

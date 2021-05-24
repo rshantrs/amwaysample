@@ -25,7 +25,6 @@
             <membership></membership>
           </b-card-text>
         </b-tab>
-        
         <b-tab title="Cart">
           <b-card-text>
             <cart v-bind:cart="sharedState.cart"></cart>

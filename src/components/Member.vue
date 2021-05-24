@@ -4,7 +4,7 @@
       <p>Please pick a member.</p>
       <b-table
         hover
-        :items="members"
+        :items="sharedState.members"
         :fields="fields"
         :select-mode="selectMode"
         selectable
@@ -23,10 +23,6 @@ export default {
   data () {
     return {
       sharedState: store.state,
-      members: [
-        { name: 'John', membership_level: 'Associate' },
-        { name: 'Mary', membership_level: 'Diamond' }
-      ],
       fields: [
         {
           key: 'name',
@@ -45,9 +41,7 @@ export default {
   methods: {
     onRowSelected (items) {
       this.sharedState.currentMember.name = items[0].name
-      this.sharedState.currentMember.membershipLevel =
-        items[0].membership_level
-      console.log(this.sharedState.currentMember)
+      this.sharedState.currentMember.membershipLevel = items[0].membership_level
     }
   },
   components: {}
